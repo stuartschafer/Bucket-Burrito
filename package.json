@@ -1,0 +1,28 @@
+{
+  "name": "bucket-burrito",
+  "version": "1.0.0",
+  "description": "A bucket-list/dreams/goals as a to do list",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.8",
+    "mysql": "^2.13.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stuartschafer/Bucket-Burrito.git"
+  },
+  "author": "Stuart Schafer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stuartschafer/Bucket-Burrito/issues"
+  },
+  "homepage": "https://github.com/stuartschafer/Bucket-Burrito#readme"
+}
