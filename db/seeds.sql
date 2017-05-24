@@ -1,4 +1,5 @@
-USE burrito_bucket;
+-- This is the JAWSDB/Heroku server name
+USE wxxe2dz55crvuuje;
 
 INSERT INTO wish_list (goal, createdAt) VALUES ("Get up on time today.", CURRENT_TIMESTAMP);
 INSERT INTO wish_list (goal, complete, createdAt) VALUES ("Marry the woman of my dreams.", true, CURRENT_TIMESTAMP);
