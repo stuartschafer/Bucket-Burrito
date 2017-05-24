@@ -1,13 +1,10 @@
 USE burrito_bucket;
 
-INSERT INTO wish_list (goal) VALUES ("Get up on time today.");
-INSERT INTO wish_list (goal, complete) VALUES ("Marry the woman of my dreams.", true);
-INSERT INTO wish_list (goal) VALUES ("Visit Italy and experience the culture.");
-INSERT INTO wish_list (goal) VALUES ("Exercise as a normal routine.");
-INSERT INTO wish_list (goal, complete) VALUES ("Go back to school.", true);
-INSERT INTO wish_list (goal) VALUES ("Work as a web developer.");
-INSERT INTO wish_list (goal) VALUES ("Volunteer for the Special Olympics.");
-INSERT INTO wish_list (goal, complete) VALUES ("Learn a new language (javascript).", true);
-INSERT INTO wish_list (goal) VALUES ("TEST9");
-INSERT INTO wish_list (goal) VALUES ("TEST10");
-INSERT INTO wish_list (goal) VALUES ("TEST11");
+INSERT INTO wish_list (goal, createdAt) VALUES ("Get up on time today.", CURRENT_TIMESTAMP);
+INSERT INTO wish_list (goal, complete, createdAt) VALUES ("Marry the woman of my dreams.", true, CURRENT_TIMESTAMP);
+INSERT INTO wish_list (goal, createdAt) VALUES ("Visit Italy and experience the culture.", CURRENT_TIMESTAMP);
+INSERT INTO wish_list (goal, createdAt) VALUES ("Exercise as a normal routine.", CURRENT_TIMESTAMP);
+INSERT INTO wish_list (goal, complete, createdAt) VALUES ("Go back to school.", true, CURRENT_TIMESTAMP);
+INSERT INTO wish_list (goal, createdAt) VALUES ("Work as a web developer.", CURRENT_TIMESTAMP);
+INSERT INTO wish_list (goal, createdAt) VALUES ("Volunteer for the Special Olympics.", CURRENT_TIMESTAMP);
+INSERT INTO wish_list (goal, complete, createdAt) VALUES ("Learn a new language (javascript).", true, CURRENT_TIMESTAMP);
