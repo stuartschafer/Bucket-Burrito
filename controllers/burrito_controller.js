@@ -12,13 +12,13 @@ router.get("/", function(req, res) {
 
 router.put("/:id", function(req, res) {
   var condition = "id = " + req.params.id;
-//   console.log("condition", condition);
   burrito.update("complete = true", condition, function() { res.redirect("/") });
-//   burrito.update(function() { res.redirect("/") });
 });
 
 router.post("/", function(req, res) {
-    burrito.create(req.body.goal, function() { res.redirect("/") });
+    var checkforRange = req.body.range || "short";
+    var checkforGoal = req.body.goal || "I WANT TO BE LIKE STUART";
+    burrito.create(checkforRange, checkforGoal, function() { res.redirect("/") });
 });
 
 module.exports = router;

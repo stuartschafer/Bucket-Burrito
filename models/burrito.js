@@ -8,8 +8,8 @@ var burrito = {
     update: function(setToTrue, condition, callback) {
         orm.update("wish_list", setToTrue, condition, function(res) { callback(res) });
     },
-    create: function(vals, callback) {
-        orm.create("wish_list", "goal", vals, function(res) { callback(res) });
+    create: function(range, vals, callback) {
+        orm.create("wish_list", range, vals, function(res) { callback(res) });
     }
 }
 

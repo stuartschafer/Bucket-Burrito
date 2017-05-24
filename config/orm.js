@@ -13,7 +13,6 @@ var orm = {
     },
     update: function(table, setToTrue, condition, callback) {
         var queryString = "UPDATE " + table + " SET " + setToTrue + " WHERE " + condition;
-        console.log(queryString);
         connection.query(queryString, function(err, result) {
             if (err) {
                 throw err;
@@ -21,11 +20,8 @@ var orm = {
             callback(result);
         });
     },
-    create: function(table, cols, vals, callback) {
-        var queryString = "INSERT INTO " + table + " (" + cols + ") VALUES ('" + vals + "');"
-        console.log("~~~~~~~~~~~~~~~~~~~~");
-        console.log(queryString);
-        console.log("~~~~~~~~~~~~~~~~~~~~");
+    create: function(table, timeframe, enteredGoal, callback) {
+        var queryString = "INSERT INTO " + table + " (goal, " + timeframe + ") VALUES ('" + enteredGoal + "', true);"
         connection.query(queryString, function(err, result) {
             if (err) {
                 throw err;

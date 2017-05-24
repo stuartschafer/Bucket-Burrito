@@ -5,6 +5,9 @@ USE burrito_bucket;
 CREATE TABLE wish_list (
     id INT AUTO_INCREMENT NOT NULL,
     goal VARCHAR(500) NOT NULL,
+    short BOOLEAN DEFAULT FALSE,
+    longer BOOLEAN DEFAULT FALSE,
+    bucket BOOLEAN DEFAULT FALSE,
     complete BOOLEAN DEFAULT FALSE,
     createdAt TIMESTAMP NOT NULL,
     PRIMARY KEY (id)
