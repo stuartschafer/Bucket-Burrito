@@ -21,7 +21,7 @@ var orm = {
         });
     },
     create: function(table, timeframe, enteredGoal, callback) {
-        var queryString = "INSERT INTO " + table + " (goal, " + timeframe + ") VALUES ('" + enteredGoal + "', true);"
+        var queryString = "INSERT INTO " + table + " (goal, " + timeframe + ", createdAt) VALUES ('" + enteredGoal + "', true, CURRENT_TIME);"
         connection.query(queryString, function(err, result) {
             if (err) {
                 throw err;
