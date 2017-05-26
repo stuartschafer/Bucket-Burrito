@@ -10,4 +10,6 @@ Everything is stored in a database, so no matter when/where you are, you can alw
 
 To see it in action, please visit it at https://burrito-bucket.herokuapp.com/
 
+![](public/assets/img/demo5.gif)
+
 Dream Big, Live Big!
